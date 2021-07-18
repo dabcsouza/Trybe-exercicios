@@ -1,0 +1,25 @@
+pwd
+curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+cat countries.txt
+less countries.txt
+grep 'Brazil' countries.txt
+man grep
+grep -i 'brazil' countries.txt
+for i in 1 2 3 4 5 6 7 8 9 10 11 12 13; do fortune -c >> teste.txt ; done #Criação de frases usando fortune -c (frases curtas) e o comando for para adicionar varias frases.
+cat teste.txt
+sed 's@[#-~]@@g'  teste.txt #retirando os caracteres % do arquivo pela falta do enter no comando cat.
+sed -i '/A:/d' teste.txt && sed -i '/Q:/d' teste.txt #Removendo alguns caracteres estranhos dos arquivos
+cat teste.txt
+sed 's@[#-~]@@g'  teste.txt >> phrases.txt #retirando os caracteres % do arquivo pela falta do enter no comando cat.
+rm teste.txt
+cat phrases.txt
+grep -v 'fox' phrases.txt
+wc -w phrases.txt
+wc -l phrases.txt
+touch empty.tbt empty.pdf
+ls
+ls -a
+la *txt
+la *txt *tbt
+man ls
+
