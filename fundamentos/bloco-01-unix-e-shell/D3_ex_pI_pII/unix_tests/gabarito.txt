@@ -1,0 +1,21 @@
+1. mkdir unix_tests
+   cd ./unix_tests
+2. touch trybe.txt
+3. cp trybe.txt trybe_backup.txt
+4. mv trybe.txt trybe_01.txt
+5. mkdir backup
+6. mv trybe_backup.txt ./backup
+7. mkdir backup2
+   la
+8. mv ./backup/trybe_backup.txt ./backup2
+9. rm -rf backup
+10. pwd && la
+rm -rf backup
+clear
+cat >> skills.txt
+head -n 5 skills.txt
+tail -n 4 skills.txt
+rm *.txt
+la
+cd unix_tests
+ls
