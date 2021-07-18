@@ -1,0 +1,200 @@
+ 1472  cd ..
+ 1473  ls
+ 1474  clear
+ 1475  git status
+ 1476  ls
+ 1477  cd front-end
+ 1478  ls
+ 1479  git add .
+ 1480  git commit -m 'criação do diretório front-end'
+ 1481  git push -u local main
+ 1482  cat >> README.md
+ 1483  git add .
+ 1484  git commit -m 'criação do diretório front-end'
+ 1485  git push -u local main
+ 1486  ls
+ 1487  cd ..
+ 1488  ls
+ 1489  cd back-end
+ 1490  cat >> README.md
+ 1491  git add .
+ 1492  git commit -m 'criação do diretório back-end'
+ 1493  git push -u local main
+ 1494  clear
+ 1495  ls
+ 1496  cd ..
+ 1497  ls
+ 1498  cd ciencia-da-computacao
+ 1499  cat >> README.md
+ 1500  git add .
+ 1501  git commit -m 'criação do diretório ciencia-da-computacao'
+ 1502  git push -u local main
+ 1503  git remote set-url local git@github.com:dabcsouza/trybe-exercicios.git
+ 1504  clear
+ 1505  ls
+ 1506  cd ..
+ 1507  ls
+ 1508  cd fundamentos
+ 1509  ls
+ 1510  mkdir bloco-01-unix-e-shell bloco-02-git-e-github-e-internet bloco-03-introcucao-a-html-e-css
+ 1511  ls
+ 1512  cd bloco-01-unix-e-shell
+ 1513  mkdir D3_ex_pI_pII
+ 1514  LS
+ 1515  ls
+ 1516  cd D3_ex_pI_pII
+ 1517  ls
+ 1518  clear
+ 1519  cat >> README.md
+ 1520  git add .
+ 1521  git commit -m 'criação do diretório com as partes I e II do primeiro dia de exercícios'
+ 1522  git push -u local main
+ 1523  ssh-keygen -t rsa -b 4096 -C "dabcs@poli.ufrj.br"
+ 1524  ssh-keygen -t rsa
+ 1525  ssh-agent
+ 1526  ssh-add ~/.ssh/id_rsa
+ 1527  clear
+ 1528  ls
+ 1529  cleaer
+ 1530  ls
+ 1531  pwd
+ 1532  git status
+ 1533  ls
+ 1534  git add .
+ 1535  git commit -m 'criação do diretório com as partes I e II do primeiro dia de exercícios'
+ 1536  git push -u local main
+ 1537  clear
+ 1538  ls
+ 1539  mcedit README.md
+ 1540  git commit -m 'alteração do arquivo README.md'
+ 1541  git add .
+ 1542  git commit -m 'alteração do arquivo README.md'
+ 1543  git push -u local main
+ 1544  mcedit README.md
+ 1545  git add .
+ 1546  git commit -m 'alteração do arquivo README.md'
+ 1547  git push -u local main
+ 1548  mcedit README.md
+ 1549  git add .
+ 1550  git commit -m 'alteração do arquivo README.md'
+ 1551  git push -u local main
+ 1552  mcedit README.md
+ 1553  git add .
+ 1554  git commit -m 'alteração do arquivo README.md'
+ 1555  git push -u local main
+ 1556  clear
+ 1557  ls
+ 1558  mcedit README.md
+ 1559  git add .
+ 1560  git commit -m 'alteração do arquivo README.md'
+ 1561  git push -u local main
+ 1562  mcedit README.md
+ 1563  git add .
+ 1564  git commit -m 'alteração do arquivo README.md'
+ 1565  git push -u local main
+ 1566  mcedit README.md
+ 1567  git add .
+ 1568  git commit -m 'alteração do arquivo README.md'
+ 1569  git push -u local main
+ 1570  mcedit README.md
+ 1571  clear
+ 1572  ;s
+ 1573  ls
+ 1574  clear
+ 1575  git add .
+ 1576  git commit -m 'alteração do arquivo README.md'
+ 1577  git push -u local main
+ 1578  ls
+ 1579  mkdir unix_tests
+ 1580  touch trybe.txt
+ 1581  cp trybe.txt trybe_backup.txt
+ 1582  mv trybe.txt trabe_01.txt
+ 1583  mkdir backup
+ 1584  mv trybe_backup.txt ./backup
+ 1585  ls
+ 1586  rm trabe_01.txt trybe_01.txt
+ 1587  ls
+ 1588  cd unix_tests
+ 1589  ls
+ 1590  cd ..
+ 1591  ls
+ 1592  cd backup
+ 1593  ls
+ 1594  pwd
+ 1595  ls
+ 1596  cp trybe_backup.txt ../trybe_01.txt
+ 1597  cd ..
+ 1598  ls
+ 1599  pwd
+ 1600  git add .
+ 1601  git commit -m 'execução dos exercicios'
+ 1602  git push -u local main
+ 1603  ls
+ 1604  mkdir backup2
+ 1605  la
+ 1606  rm -rf backup
+ 1607  mv backup2 backup
+ 1608  pwd && la
+ 1609  rm -rf backup
+ 1610  clear
+ 1611  cat >> skills.txt
+ 1612  head -n 5 skills.txt
+ 1613  tail -n 4 skills.txt
+ 1614  rm *.txt
+ 1615  la
+ 1616  cd unix_tests
+ 1617  ls
+ 1618  history
+ 1619  history | tail -n 38 > gabarito.txt 
+ 1620  cat gabarito.txt
+ 1621  history | tail -n 45 > gabarito.txt 
+ 1622  cat gabarito.txt
+ 1623  mcedit gabarito.txt
+ 1624  pwd
+ 1625  ls
+ 1626  cd ..
+ 1627  ls
+ 1628  pwd
+ 1629  cleaar
+ 1630  clear
+ 1631  ls
+ 1632  git add .
+ 1633  git commit -m 'execução dos exercicios'
+ 1634  git push -u local main
+ 1635  shutdown -h now
+ 1636  history > historico.txt
+ 1637  grep 'sed' historico.txt
+ 1638  clear
+ 1639  ls
+ 1640  cd Documents
+ 1641  ls
+ 1642  cd trybe-exercicios
+ 1643  ls
+ 1644  mcedit README.md
+ 1645  pwd
+ 1646  ls
+ 1647  mcedit README.md
+ 1648  cd fundamentos
+ 1649  ls
+ 1650  cd bloco-01-unix-e-shell
+ 1651  ls
+ 1652  cd D3_ex_pI_pII
+ 1653  ls
+ 1654  mcedit README.md
+ 1655  git add .
+ 1656  git commit -m 'alteração do arquivo README.md'
+ 1657  git push -u local main
+ 1658  mcedit README.md
+ 1659  git add .
+ 1660  git commit -m 'alteração do arquivo README.md'
+ 1661  git push -u local main
+ 1662  history
+ 1663  history | tail -n 60 > gabaritopII.txt
+ 1664  mcedit gabaritopII.txt
+ 1665  history | tail -n 100 > gabaritopII.txt
+ 1666  sl
+ 1667  ls
+ 1668  grep 'curl' gabaritopII.txt
+ 1669  grep -i 'curl' gabaritopII.txt
+ 1670  clear
+ 1671  ls
