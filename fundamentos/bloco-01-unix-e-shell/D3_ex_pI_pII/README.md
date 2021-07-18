@@ -1,3 +1,3 @@
-#Exercícios
-##Parte I
+# Exercícios
+## Parte I
 >enunciado parte I.
