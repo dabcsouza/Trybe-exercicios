@@ -7,7 +7,7 @@
 2. Crie um arquivo de texto com o nome `trybe.txt`.
 3. Crie uma cópia do arquivo `trybe.txt` com nome `trybe_backup.txt`.
 4. Renomeie o arquivo `trybe.txt`.
-5. Dentro de unix_tests , crie um novo diretório chamado backup.
+5. Dentro de `unix_tests` , crie um novo diretório chamado backup.
 6. Mova o arquivo `trybe_backup.txt` para o diretório `backup`.
 7. Dentro de `unix_tests` , crie um novo diretório chamado `backup2` .
 8. Mova o arquivo `trybe_backup.txt` da pasta backup para a pasta`backup2` .
