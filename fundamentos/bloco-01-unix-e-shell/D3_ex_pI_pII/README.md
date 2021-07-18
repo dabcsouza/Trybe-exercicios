@@ -43,7 +43,7 @@
 5. Busque por `Brazil` no `countries.txt` .
 6. Busque novamente por `brazil` , mas agora utilizando o *lower case*.  
 
-Para os próximos exercícios, crie um novo arquivo chamado `phrases.txt` e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.**  
+**Para os próximos exercícios, crie um novo arquivo chamado `phrases.txt` e adicione algumas frases à sua escolha. Não precisa criar o arquivo pelo terminal.**  
 7. Busque pelas frases que **não contenham** a palavra fox.  
 8. Conte o número de palavras do arquivo `phrases.txt`.
 9. Conte o número de linhas do arquivo `phrases.txt`.
