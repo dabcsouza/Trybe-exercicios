@@ -1,5 +1,5 @@
 # Exercícios
-## Parte I - Criação de arquivos e diretórios
+## Parte I - Criação de arquivos e diretórios :heavy_check_mark:
 >Enunciado parte I.
 
 **Dica:** Para criação de arquivos vazios você pode utilizar o comando `touch` nome-do-arquivo.extensao .
@@ -32,7 +32,7 @@
 15. Mostre na tela as 4 últimas skills do arquivo `skills.txt` .
 16. Apague todos os arquivos que terminem em `.txt` .   
 
-## Parte II - Manipulação & Busca
+## Parte II - Manipulação & Busca :heavy_check_mark:
 >Enunciado da parte II
 
 1. Na pasta `unix_tests` , baixe um arquivo com os nomes de todos os países do mundo utilizando o comando [curl](https://linux.die.net/man/1/curl):
