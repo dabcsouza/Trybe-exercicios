@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios :construction_worker:
 ## Parte I - Criação de arquivos e diretórios :heavy_check_mark:
 >Enunciado parte I.
 
