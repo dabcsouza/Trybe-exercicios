@@ -1,0 +1,46 @@
+ls -l
+total 40
+drwxr-xr-x 3 dsouza dsouza 4096 Jul 19 13:03 .
+drwxr-xr-x 3 dsouza dsouza 4096 Jul 19 12:38 ..
+-rw-r--r-- 1 dsouza dsouza 4649 Jul 19 12:49 bunch_of_things.txt
+-rw-r--r-- 1 dsouza dsouza 1842 Jul 19 12:38 countries.txt
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.pdf
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.tbt
+-rw-r--r-- 1 dsouza dsouza    6 Jul 19 13:03 gabaritopII.txt
+drwxr-xr-x 2 dsouza dsouza 4096 Jul 19 12:57 gabaritos
+-rw-r--r-- 1 dsouza dsouza 2806 Jul 19 12:46 phrases2.txt
+-rw-r--r-- 1 dsouza dsouza   74 Jul 19 12:43 skills2.txt
+-rw-r--r-- 1 dsouza dsouza   19 Jul 19 12:44 top_skills.txt
+chmod a+rw bunch_of_things.txt
+total 32
+-rw-rw-rw- 1 dsouza dsouza 4649 Jul 19 12:49 bunch_of_things.txt
+-rw-r--r-- 1 dsouza dsouza 1842 Jul 19 12:38 countries.txt
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.pdf
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.tbt
+-rw-r--r-- 1 dsouza dsouza  646 Jul 19 13:07 gabaritopII.txt
+drwxr-xr-x 2 dsouza dsouza 4096 Jul 19 12:57 gabaritos
+-rw-r--r-- 1 dsouza dsouza 2806 Jul 19 12:46 phrases2.txt
+-rw-r--r-- 1 dsouza dsouza   74 Jul 19 12:43 skills2.txt
+-rw-r--r-- 1 dsouza dsouza   19 Jul 19 12:44 top_skills.txt
+chmod a-w bunch_of_things.txt
+total 32
+-r--r--r-- 1 dsouza dsouza 4649 Jul 19 12:49 bunch_of_things.txt
+-rw-r--r-- 1 dsouza dsouza 1842 Jul 19 12:38 countries.txt
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.pdf
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.tbt
+-rw-r--r-- 1 dsouza dsouza 1230 Jul 19 13:10 gabaritopII.txt
+drwxr-xr-x 2 dsouza dsouza 4096 Jul 19 12:57 gabaritos
+-rw-r--r-- 1 dsouza dsouza 2806 Jul 19 12:46 phrases2.txt
+-rw-r--r-- 1 dsouza dsouza   74 Jul 19 12:43 skills2.txt
+-rw-r--r-- 1 dsouza dsouza   19 Jul 19 12:44 top_skills.txt
+chmod 644 bunch_of_things.txt
+total 32
+-rw-r--r-- 1 dsouza dsouza 4649 Jul 19 12:49 bunch_of_things.txt
+-rw-r--r-- 1 dsouza dsouza 1842 Jul 19 12:38 countries.txt
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.pdf
+-rw-r--r-- 1 dsouza dsouza    0 Jul 19 12:38 empty.tbt
+-rw-r--r-- 1 dsouza dsouza 1794 Jul 19 13:11 gabaritopII.txt
+drwxr-xr-x 2 dsouza dsouza 4096 Jul 19 12:57 gabaritos
+-rw-r--r-- 1 dsouza dsouza 2806 Jul 19 12:46 phrases2.txt
+-rw-r--r-- 1 dsouza dsouza   74 Jul 19 12:43 skills2.txt
+-rw-r--r-- 1 dsouza dsouza   19 Jul 19 12:44 top_skills.txt
