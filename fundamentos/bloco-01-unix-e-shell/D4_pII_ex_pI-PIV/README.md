@@ -29,7 +29,7 @@
 ## Parte III - Processos & Jobs
 >Enunciado da parte III
 
-1. Liste todos `os` processos;
+1. Liste todos os processos;
 2. Agora use o comando [sleep](https://linux.die.net/man/3/sleep) 30 [&](https://linuxhandbook.com/run-process-background/);
 3. Use a listagem de processos para encontrar o PID do processo que está executando o comando sleep 30 e termine a sua execução (~mate o processo~);
 4. Execute novamente o comando `sleep 30` , mas agora sem o `&` . Depois, faça com que ele continue executando em background;
