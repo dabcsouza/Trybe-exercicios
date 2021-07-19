@@ -39,4 +39,4 @@
 7. Verifique que apenas o processo `sleep` 300 está em execução com o comando jobs . Suspenda a execução desse processo.
 >Você vai precisar trazer o processo para foreground ( `fg` ) e suspendê-lo ( `ctrl+z` ), ou enviar um sinal.
 8. Retome a execução do processo `sleep` 100 em background com o comando `bg`.
-9. Termine a execução de todos os processos `sleep` (mate os processos).
+9. Termine a execução de todos os processos `sleep` (~mate os processos~).
