@@ -3,4 +3,4 @@ O que vou aprender na Trybe
 - Unix
 - Bash
 - Git
-- Shell script
+- Shell script  
