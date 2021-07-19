@@ -5,4 +5,4 @@ O que vou aprender na Trybe
 - Git
 - CSS
 - HTML
-- Shell script  
+- Shell script
