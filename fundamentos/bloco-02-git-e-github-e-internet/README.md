@@ -14,4 +14,4 @@ As atividades propostas neste bloco foram voltados para a configuração e apren
 
 >Não deixe de [resolver o assasinato usando apenas comandos git](https://github.com/nivbend/gitstery).
 
-'#VQV'
+### #VQV
