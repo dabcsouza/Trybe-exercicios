@@ -34,7 +34,6 @@ div:first-of-type {
     color: #fff;
 }
 
-div:nth-child(odd){
+div:nth-child(2n+1){
     font-style: italic;
-    color:aqua;
 }
