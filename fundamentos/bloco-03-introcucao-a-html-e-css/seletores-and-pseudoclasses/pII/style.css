@@ -10,19 +10,21 @@ div:hover {
     border: 2px solid #000;    
 }
 
-div.orange-color{
-    padding: 10px 0px 10px 10px;
+div:nth-child(4){
+    background-color: green;
 }
 
-h1, h3 {
+div:first-of-type {
+    background-color: blue;
+    color: #fff;
+}
+
+/* h1, h3 {
     font-style:italic;
 }
 
-
-.blue-color {
-    background-color:blue;
-    max-width: 40;
-}
+div.orange-color{
+    padding: 10px 0px 10px 10px;
 
 .green-color {
     background-color:green;
@@ -39,4 +41,4 @@ h1, h3 {
 
 .yellow-color {
     background-color:yellow;
-}
+} */
