@@ -1,0 +1,75 @@
+ol li {
+    background-color: yellow;
+    max-width: 80%;
+}
+
+ol li:nth-child(2n){
+    color:green;
+}
+
+ol li:nth-child(2n+1){
+    text-transform: uppercase;
+}
+
+:is(h1,h2,h3,h4,h5,h6) {
+    color: red;
+}
+
+:is(h1,h2,h3,h4,h5,h6) {
+    color: red;
+}
+
+:is(h1,h2,h3,h4,h5,h6) em {
+    font-size: 40px;
+    border: 1px solid black;    
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color:blue;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+ul li:nth-child(-n+3) {
+    color:blue;
+}
+
+ul:first-of-type li:nth-child(2), ul:first-of-type li:nth-child(3){
+    background-color: pink;
+    max-width:80%;
+}
+
+a:hover[href*="stackover"] {
+    font-weight: bold;
+    color: orange;
+}
+
+a:hover[href*="w3schools"] {
+    font-weight: bold;
+    color:#04AA6D;
+}
+
+a:hover[href*="mozilla"] {
+    font-weight: bold;
+    color:black;
+}
+
+a:hover[href*="devdocs"] {
+    font-weight: bold;
+    color:yellow;
+}
+
+a:hover[href*="trybe"] {
+    font-weight: bold;
+    color: rgb(3, 107, 82);
+}
