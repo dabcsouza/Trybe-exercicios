@@ -1,4 +1,4 @@
-let varCase = 2;
+let varCase = 10;
 
 switch (varCase) {
     case 1:
