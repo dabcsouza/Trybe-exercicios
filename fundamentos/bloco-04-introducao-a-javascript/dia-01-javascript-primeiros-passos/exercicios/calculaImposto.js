@@ -17,7 +17,7 @@ if (salario <= 1556.94){
         console.log(salario*(1 - .11)*(1-.225) + 636.13);
     }
 } else {
-    if (salario*(1 - .11) > 3751.05 && salario*(1 - .11) <= 4664.68) {
+    if (salario*(1 - .11)  3751.05 && salario*(1 - .11) <= 4664.68) {
         console.log(salario*(1 - .11)*(1-.225) + 636.13);
     }
 }
