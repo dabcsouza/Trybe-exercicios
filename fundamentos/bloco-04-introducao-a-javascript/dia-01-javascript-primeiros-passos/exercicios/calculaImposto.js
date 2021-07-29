@@ -1,4 +1,4 @@
-let salario = 3000;
+let salario = 100000;
 
 if (salario <= 1556.94){
     console.log(salario*(1- .08));
