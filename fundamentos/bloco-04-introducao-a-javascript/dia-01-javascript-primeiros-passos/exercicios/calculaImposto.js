@@ -1,4 +1,4 @@
-let salario;
+let salario = 3000;
 
 if (salario <= 1556.94){
     console.log(salario*(1- .08));
@@ -17,8 +17,9 @@ if (salario <= 1556.94){
         console.log(salario*(1 - .11)*(1-.225) + 636.13);
     }
 } else {
-    if (salario*(1 - .11)  3751.05 && salario*(1 - .11) <= 4664.68) {
-        console.log(salario*(1 - .11)*(1-.225) + 636.13);
+    if ((salario - 570.88) <= 4664.68){
+        console.log((salario - 570.88)*(1-.225) + 636.13);
+    }else{
+        console.log((salario-570.88)*(1 - .275) + 869.36);
     }
 }
-
