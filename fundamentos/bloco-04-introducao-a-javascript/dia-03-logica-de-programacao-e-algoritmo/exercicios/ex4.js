@@ -6,7 +6,7 @@ for (let i = 0; i < n; i += 1){
         if ((i%2)=== 1) {
             esp +=' ';
         } else{
-            esp += '*';
+            if (j<);
         }
     }
     console.log(esp);
