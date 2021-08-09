@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="mutual">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="mutual">Segundo parágrafo!</p>
+    </header>
+    <script>
+        document.querySelector("#page-title").textContent= 'Iron Man';
+        document.querySelector("#second-paragraph").textContent = "Este é o segundo parágrafo do texto e estou alterando usando o getElementById. este comando seleciona elementos dentro do documents, dentro de uma estrutura DOM.";
+
+        const paragraph = document.querySelector("#paragraph");
+        paragraph.style.color = "red";
+
+        const secP = document.querySelector("#second-paragraph");
+        secP.style.border = "2px black solid";
+        secP.style.padding = "1.3em 2em";
+        secP.style.textAlign = "center";
+
+        document.querySelector(".mutual").style.textAlign="center";
+        document.querySelector("p").style.color = "blue";
+        
+        document.querySelector("#subtitle").textContent = "Introdução ao DOM (Document Object Model):"
+
+        for(let i in document.querySelectorAll(".mutual")){
+            console.log(document.querySelectorAll(".mutual")[i]);
+        }
+
+        document.querySelector("h4").style.color = "#498CFC";
+    </script>
+  </body>
+</html>
