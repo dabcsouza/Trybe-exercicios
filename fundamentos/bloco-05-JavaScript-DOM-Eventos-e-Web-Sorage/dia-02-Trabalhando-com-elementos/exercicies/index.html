@@ -73,9 +73,13 @@
       document.querySelector('.center-content').appendChild(document.createElement('p'));
       document.querySelector('.center-content').firstChild.innerText = 'Olá eu sou um elemento neto';
 
-      let sectionChild = document.createElement('section');
-      sectionChild.className = 'left-content';
-      document.querySelector('.main-content').appendChild(sectionChild);
+      let sectionChildLeft = document.createElement('section');
+      sectionChildLeft.className = 'left-content';
+      document.querySelector('.main-content').appendChild(sectionChildLeft);
+       
+      let sectionChildRight = document.createElement('section');
+      sectionChildRight.className = 'right-content';
+      document.querySelector('.main-content').appendChild(sectionChildRight);
          
      
       
