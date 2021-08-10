@@ -98,9 +98,16 @@
       } 
 
       for (let i = 0; i < 3; i += 1){
-        document.querySelector('.main-content').appendChild(document.createElement('h3'));
+
+        let h3Description = document.createElement('h3');
+        h3Description.className = 'description';
+        document.querySelector('.main-content').appendChild(h3Description);
       }
      
+      document.querySelector('.main-content').removeChild(sectionChildLeft);
+      document.querySelector('.right-content').style.marginRight = 'auto';
+      document.querySelector('.center-content').style.backgroundColor = 'green';
+      document.querySelector('.center-content').style.padding = '10px';
       
     </script>
   </body>
