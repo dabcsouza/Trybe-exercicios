@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+    </main>
+    <script>
+        let ondeVcEsta = document.querySelector("#elementoOndeVoceEsta");
+        ondeVcEsta.parentNode.style.color = 'blue';
+        ondeVcEsta.firstElementChild.textContent = 'Olá, sou o primeiro filho do filho.'
+        ondeVcEsta.parentNode.firstElementChild.textContent = 'Primeiro filho a partir do Pai.'
+        ondeVcEsta.previousElementSibling.textContent += ' E também a partir de onde estou';
+        ondeVcEsta.nextSibling.textContent += ' Estou acessando de onde estou e colocando este texto. O texto é um nó.'
+        ondeVcEsta.nextElementSibling.style.border = "2px solid red";
+        ondeVcEsta.parentNode.children[2].style.padding = '20px';
+        ondeVcEsta.parentNode.children[2].style.color = 'gray';
+        ondeVcEsta.parentNode.children[2].style.textAlign = 'center';
+        ondeVcEsta.parentNode.children[2].textContent = 'Olá sou o terceiro filho acessado de 2 formar distintas.'
+
+    </script>
+</body>
+</html>
