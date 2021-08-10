@@ -57,10 +57,22 @@
   </head>
   <body>
     <script>
-      let  h1First = document.createElement('h1');
-      h1First.className = "first-h1";
-      document.body.appendChild(h1First);
+
+      let  title = document.createElement('h1');
+      title.className = "first-h1";
+      document.body.appendChild(title);
       document.querySelector(".first-h1").innerText = 'Exercício 5.2 - JavaScript DOM';
+
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+
+      let sectionContent = document.createElement('section');
+      sectionContent.className = 'center-content';
+      document.getElementsByClassName('main-content')[0].appendChild(sectionContent);
+      document.querySelector('.center-content').appendChild(document.createElement('p'));
+      document.querySelector('.center-content').firstChild.innerText = 'Olá eu sou um elemento neto';
+      
       
       
     </script>
