@@ -85,6 +85,17 @@
       imageInsert.className = 'small-image';
       imageInsert.src = 'https://picsum.photos/200';
       document.querySelector('.left-content').appendChild(imageInsert);
+
+      let values  = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      document.querySelector('.right-content').appendChild(document.createElement('ul'));
+      document.querySelector('ul').id = 'unList';
+      
+      for (let i = 0; i < values.length; i += 1) {
+        let listItem = document.createElement('li');
+        listItem.innerText = values[i];
+        document.querySelector('#unList').appendChild(listItem);
+
+      } 
      
       
     </script>
