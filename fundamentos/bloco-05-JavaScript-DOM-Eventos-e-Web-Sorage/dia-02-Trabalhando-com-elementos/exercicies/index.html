@@ -72,8 +72,12 @@
       document.getElementsByClassName('main-content')[0].appendChild(sectionContent);
       document.querySelector('.center-content').appendChild(document.createElement('p'));
       document.querySelector('.center-content').firstChild.innerText = 'Olá eu sou um elemento neto';
-      
-      
+
+      let sectionChild = document.createElement('section');
+      sectionChild.className = 'left-content';
+      document.querySelector('.main-content').appendChild(sectionChild);
+         
+     
       
     </script>
   </body>
