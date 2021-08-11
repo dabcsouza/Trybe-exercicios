@@ -7,6 +7,7 @@ const myWebpage = document.getElementById('mySpotrybefy');
 firstLi.addEventListener('click', changeClass);
 input.addEventListener('keyup', alteraNome);
 thirdLi.addEventListener('dblclick',redirect);
+secondLi.addEventListener('mouseover',changeColor);
 
 
 function changeClass(element){
@@ -25,13 +26,13 @@ function redirect(){
   open('https://dabcsouza.github.io/');
 }
 
-
+function changeColor(){
+  secondLi.style.backgroundColor = '#65B5FC';
+}
 
 /* 
  
- Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
-redirecione para alguma página;
-1. Que tal redirecionar para seu portifólio?
+
  Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 a cor do mesmo;
 
