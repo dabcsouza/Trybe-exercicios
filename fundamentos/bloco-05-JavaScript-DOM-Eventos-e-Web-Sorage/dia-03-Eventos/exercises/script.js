@@ -30,3 +30,14 @@ for (let i = 0; i < dezDaysList.length; i += 1){
   liDays.innerText = dezDaysList[i];
   document.querySelector("#days").appendChild(liDays);
 }
+
+function createButton(sParameter){
+
+  button = document.createElement('button');
+  button.className = "btn-holiday";
+  button.innerText = sParameter;
+  document.querySelector(".buttons-container").appendChild(button);
+
+}
+
+createButton('Feriados');
