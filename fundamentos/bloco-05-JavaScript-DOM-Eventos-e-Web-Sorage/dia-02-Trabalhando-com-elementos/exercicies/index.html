@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+      let  title = document.createElement('h1');
+      title.className = "first-h1";
+      document.body.appendChild(title);
+      document.querySelector(".first-h1").innerText = 'Exercício 5.2 - JavaScript DOM';
+
+      let main = document.createElement('main');
+      main.className = 'main-content';
+      document.body.appendChild(main);
+
+      let sectionContent = document.createElement('section');
+      sectionContent.className = 'center-content';
+      document.getElementsByClassName('main-content')[0].appendChild(sectionContent);
+      document.querySelector('.center-content').appendChild(document.createElement('p'));
+      document.querySelector('.center-content').firstChild.innerText = 'Olá eu sou um elemento neto';
+
+      let sectionChildLeft = document.createElement('section');
+      sectionChildLeft.className = 'left-content';
+      document.querySelector('.main-content').appendChild(sectionChildLeft);
+       
+      let sectionChildRight = document.createElement('section');
+      sectionChildRight.className = 'right-content';
+      document.querySelector('.main-content').appendChild(sectionChildRight);
+      
+      let imageInsert = document.createElement('img');
+      imageInsert.className = 'small-image';
+      imageInsert.src = 'https://picsum.photos/200';
+      document.querySelector('.left-content').appendChild(imageInsert);
+
+      let values  = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      document.querySelector('.right-content').appendChild(document.createElement('ul'));
+      document.querySelector('ul').id = 'unList';
+      
+      for (let i = 0; i < values.length; i += 1) {
+        let listItem = document.createElement('li');
+        listItem.innerText = values[i];
+        document.querySelector('#unList').appendChild(listItem);
+
+      } 
+
+      for (let i = 0; i < 3; i += 1){
+
+        let h3Description = document.createElement('h3');
+        h3Description.className = 'description';
+        document.querySelector('.main-content').appendChild(h3Description);
+      }
+     
+      document.querySelector('.main-content').removeChild(sectionChildLeft);
+      document.querySelector('.right-content').style.marginRight = 'auto';
+      document.querySelector('.center-content').style.backgroundColor = 'green';
+      document.querySelector('.center-content').style.padding = '10px';
+      
+    </script>
+  </body>
+</html>
