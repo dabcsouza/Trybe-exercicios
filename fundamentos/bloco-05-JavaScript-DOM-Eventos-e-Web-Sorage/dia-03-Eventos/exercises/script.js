@@ -23,6 +23,22 @@ createButtonHoliday('Feriados');
 document.querySelector('.btn-holiday').addEventListener("click",revealHoliday);
 createDaysOfTheWeek();
 createButtonFriday('Sexta-Feira');
+document.querySelector('#btn-friday').addEventListener('click', sextou);
+
+
+function sextou(){
+let fridayArray = document.getElementsByClassName("friday");
+
+for(let i = 0; i < fridayArray.length; i += 1) {
+  if(fridayArray[i].innerText === "SEXTOU!!!"){
+
+    fridayArray[i].innerText = 4 + 7*i;
+
+  } else {fridayArray[i].innerText = "SEXTOU!!!";}
+}
+
+}
+
 
 function createButtonFriday(fParameter){
   let buttonFrd = document.createElement("button");
