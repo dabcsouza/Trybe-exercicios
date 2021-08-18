@@ -2,54 +2,56 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Currículo</title>
 </head>
 <body>
     <form action="" method="get">
-        <fieldset>
-            <label for="name-box">
-                <span>Nome: </span>
+        <fieldset class="forms-conteiner">
+            <legend>Dados Pessoais</legend>
+            <div class="input-content">
+                <label for="name-box">Nome: </label>
                 <input type="text" name="name-box" id="name" maxlength="40" required>
-            </label>            
-            <br><br>
+            </div>
 
-            <label for="">
-                <span>E-mail: </span>
+            <div class="input-content">
+                <label for="">E-mail: </label>
                 <input type="text" name="e-mail" id="email-box" maxlength="50" required>
-            </label>
-            <br><br>
+            </div>
 
-            <label for="">
-                <span>CPF: </span>
+            <div class="input-content">
+                <label for="">CPF: </label>
                 <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
-            </label>
-            <br><br>
+            </div>
 
-            <label for="">
-                <span>Endereço: </span>
-                <input type="text" name="endereco" id="address" maxlength="200" required>
-            </label>
-            <br><br>
+                <div class="input-content">
+                    <label for="">Endereço: </label>
+                    <input type="text" name="endereco" id="address" maxlength="200" required>
+                </div>
 
-            <label for="">
-                <span>Cidade: </span>
-                <input type="text" name="cidade" id="city" maxlength="28" required>
-            </label>
-            <br><br>
+                <div class="input-content">
+                    <label for="">Cidade: </label>
+                    <input type="text" name="cidade" id="city" maxlength="28" required>
+                </div>
 
-            <label for="">
-                <select name="estado" id="add-state" required></select>
-            </label>
-            <br><br>
+                <div class="input-content">
+                    <label for=""></label>
+                    <select name="estado" id="add-state" required></select>
+                </div>
 
-            <label for="complemento1">
-                <input type="radio" name="compl" id="complemento1" checked>
-                <span>Casa</span>
-            </label>
-            <label for="complemento2">
-                <input type="radio" name="compl" id="complemento2">
-                <span>Apartamento</span>
-            </label>
+                <input type="radio" name="compl" id="complemento1" checked value="casa" required>
+                <label for="complemento1"> Casa </label>
+            
+                <input type="radio" name="compl" id="complemento2" value="apartamento" required>
+                <label for="complemento2">Apartamento</label>
+        </fieldset>
+        
+        <fieldset class="forms-conteiner">
+            <legend>Última experiência profissional</legend>
+            <p>Resumo do Currículo:</p>
+            <textarea name="" id="" cols="50" rows="20" maxlength="1000"></textarea>
         </fieldset>
     </form>
     <script src="script.js" defer></script>
