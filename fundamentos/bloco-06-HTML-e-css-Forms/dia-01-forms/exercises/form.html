@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Currículo</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <label for="name-box">
+                <span>Nome: </span>
+                <input type="text" name="name-box" id="name" maxlength="40" required>
+            </label>            
+            <br><br>
+
+            <label for="">
+                <span>E-mail: </span>
+                <input type="text" name="e-mail" id="email-box" maxlength="50" required>
+            </label>
+            <br><br>
+
+            <label for="">
+                <span>CPF: </span>
+                <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
+            </label>
+            <br><br>
+
+            <label for="">
+                <span>Endereço: </span>
+                <input type="text" name="endereco" id="address" maxlength="200" required>
+            </label>
+            <br><br>
+
+            <label for="">
+                <span>Cidade: </span>
+                <input type="text" name="cidade" id="city" maxlength="28" required>
+            </label>
+            <br><br>
+
+            <label for="">
+                <select name="estado" id="add-state" required></select>
+            </label>
+            <br><br>
+
+            <label for="complemento1">
+                <input type="radio" name="compl" id="complemento1" checked>
+                <span>Casa</span>
+            </label>
+            <label for="complemento2">
+                <input type="radio" name="compl" id="complemento2">
+                <span>Apartamento</span>
+            </label>
+        </fieldset>
+    </form>
+    <script src="script.js" defer></script>
+</body>
+</html>
