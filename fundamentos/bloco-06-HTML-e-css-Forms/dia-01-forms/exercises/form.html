@@ -56,7 +56,7 @@
 
             <div>
                 <p>Resumo do Currículo:</p>
-                <textarea name="" id="" cols="78" rows="20" maxlength="1000"></textarea>
+                <textarea name="" id="" cols="50" rows="10" maxlength="1000"></textarea>
             </div>
 
             <div class="input-content">
@@ -71,7 +71,7 @@
 
             <div class="input-content">
                 <label for="initialDate">Dada de inicio: </label>
-                <input type="text" name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" required>
+                <input type="text" name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" pattern="[0-9]+$" required>
             </div>
             <button type="submit" id="send-form"> Enviar Currículo</button>
         </fieldset>
