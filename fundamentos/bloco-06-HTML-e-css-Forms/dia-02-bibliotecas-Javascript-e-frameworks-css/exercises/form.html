@@ -5,39 +5,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
     <title>Currículo</title>
 </head>
 <body>
     <form action="" method="get">
-        <fieldset class="forms-conteiner">
-            <legend>Dados Pessoais</legend>
-            <div class="input-content">
+        <fieldset>
+            Dados Pessoais
+            <div>
                 <label for="name-box">Nome: </label>
                 <input type="text" name="name-box" id="name" maxlength="40" required>
             </div>
 
-            <div class="input-content">
+            <div>
                 <label for="">E-mail: </label>
                 <input type="text" name="e-mail" id="email-box" maxlength="50" required>
             </div>
 
-            <div class="input-content">
-                <label for="">CPF: </label>
+            <div>
+                <label for="cpf">CPF: </label>
                 <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
             </div>
 
-            <div class="input-content">
-                <label for="">Endereço: </label>
+            <div>
+                <label for="address">Endereço: </label>
                 <input type="text" name="endereco" id="address" maxlength="200" required>
             </div>
 
             <div class="input-content">
-                <label for="">Cidade: </label>
+                <label for="city">Cidade: </label>
                 <input type="text" name="cidade" id="city" maxlength="28" required>
             </div>
 
             <div class="input-content">
-                <label for=""></label>
+                <label for="add-state"></label>
                 <select name="estado" id="add-state" required></select>
             </div>
 
@@ -50,30 +54,29 @@
             </div>
         </fieldset>
         
-        <fieldset class="forms-conteiner">
-
-            <legend>Última experiência profissional</legend>
+        <fieldset>
+          <p>Última experiência profissional</p>
 
             <div>
                 <p>Resumo do Currículo:</p>
                 <textarea name="" id="" cols="50" rows="10" maxlength="1000"></textarea>
             </div>
 
-            <div class="input-content">
+            <div>
                 <label for="cargo">Cargo: </label>
                 <input type="text" name="cargo" id="cargo" maxlength="40" required>
             </div>
 
-            <div class="input-content">
+            <div>
                 <label for="description-word">Descrição do cargo: </label>
                 <input type="text" name="description-word" id="description-word" maxlength="500" required>
             </div>
 
-            <div class="input-content">
+            <div>
                 <label for="initialDate">Dada de inicio: </label>
-                <input type="text" name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" pattern="[0-9]+$" required>
+                <input type="text" name="initial-date" id="initialDate" maxlength="10" required>
             </div>
-            <button type="submit" id="send-form"> Enviar Currículo</button>
+            <button type="submit" id="send-form" class='btn btn-light'> Enviar Currículo</button>
         </fieldset>
 
     </form>
