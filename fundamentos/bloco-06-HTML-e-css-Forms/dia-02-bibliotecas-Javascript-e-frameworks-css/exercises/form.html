@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Currículo</title>
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset class="forms-conteiner">
+            <legend>Dados Pessoais</legend>
+            <div class="input-content">
+                <label for="name-box">Nome: </label>
+                <input type="text" name="name-box" id="name" maxlength="40" required>
+            </div>
+
+            <div class="input-content">
+                <label for="">E-mail: </label>
+                <input type="text" name="e-mail" id="email-box" maxlength="50" required>
+            </div>
+
+            <div class="input-content">
+                <label for="">CPF: </label>
+                <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
+            </div>
+
+            <div class="input-content">
+                <label for="">Endereço: </label>
+                <input type="text" name="endereco" id="address" maxlength="200" required>
+            </div>
+
+            <div class="input-content">
+                <label for="">Cidade: </label>
+                <input type="text" name="cidade" id="city" maxlength="28" required>
+            </div>
+
+            <div class="input-content">
+                <label for=""></label>
+                <select name="estado" id="add-state" required></select>
+            </div>
+
+            <div class="radio">
+                <input type="radio" name="compl" id="complemento1" checked value="casa" required>
+                <label for="complemento1"> Casa </label>
+            
+                <input type="radio" name="compl" id="complemento2" value="apartamento" required>
+                <label for="complemento2">Apartamento</label>
+            </div>
+        </fieldset>
+        
+        <fieldset class="forms-conteiner">
+
+            <legend>Última experiência profissional</legend>
+
+            <div>
+                <p>Resumo do Currículo:</p>
+                <textarea name="" id="" cols="50" rows="10" maxlength="1000"></textarea>
+            </div>
+
+            <div class="input-content">
+                <label for="cargo">Cargo: </label>
+                <input type="text" name="cargo" id="cargo" maxlength="40" required>
+            </div>
+
+            <div class="input-content">
+                <label for="description-word">Descrição do cargo: </label>
+                <input type="text" name="description-word" id="description-word" maxlength="500" required>
+            </div>
+
+            <div class="input-content">
+                <label for="initialDate">Dada de inicio: </label>
+                <input type="text" name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" pattern="[0-9]+$" required>
+            </div>
+            <button type="submit" id="send-form"> Enviar Currículo</button>
+        </fieldset>
+
+    </form>
+    <script src="script.js" defer></script>
+</body>
+</html>
