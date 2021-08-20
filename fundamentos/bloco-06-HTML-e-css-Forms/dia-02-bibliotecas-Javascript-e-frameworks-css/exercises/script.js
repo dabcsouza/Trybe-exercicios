@@ -12,3 +12,11 @@ for (let i = 0; i < estadosNomes.length; i += 1) {
     }
     selectEstate.appendChild(option);
 }
+
+$(document).ready(function() {
+  $('#initialDate').mask('00/00/0000')
+});
+
+$(document).ready(function() {
+  $('#cpf').mask('000.000.000-00')
+});

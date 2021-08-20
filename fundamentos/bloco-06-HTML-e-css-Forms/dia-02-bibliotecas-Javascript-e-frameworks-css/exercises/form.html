@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,78 +8,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-    
+    <script src="dist/jquery-3.6.0.min.js"></script>
+    <script src="dist/jquery.mask.min.js"></script>        
     <title>Currículo</title>
-</head>
-<body>
-    <form action="" method="get">
-        <fieldset>
-            Dados Pessoais
-            <div>
-                <label for="name-box">Nome: </label>
-                <input type="text" name="name-box" id="name" maxlength="40" required>
-            </div>
+  </head>
 
-            <div>
-                <label for="">E-mail: </label>
-                <input type="text" name="e-mail" id="email-box" maxlength="50" required>
-            </div>
+  <body class='.bg-light.bg-gradient'>
+    <header> 
+      <h1 class="display-4 text-center"> Currículo Virtual </h1>
+    </header>
+      <form action="" method="get" class="g-3">
+        <fieldset class="container border border-2">
 
-            <div>
-                <label for="cpf">CPF: </label>
-                <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
-            </div>
+          <p class="mb-3 mt-3 lead" widith="100%"> 
+            <strong>Dados Pessoais </strong> 
+          </p>
 
-            <div>
-                <label for="address">Endereço: </label>
-                <input type="text" name="endereco" id="address" maxlength="200" required>
-            </div>
+          <div class="mb-3 col-md-9">
+            <label class='form-label' for="name">Nome: </label>
+            <input type="text" class='form-control' name="name-box" id="name" maxlength="40" required>
+          </div>
 
-            <div class="input-content">
-                <label for="city">Cidade: </label>
-                <input type="text" name="cidade" id="city" maxlength="28" required>
-            </div>
+          <div class="mb-3 col-md-4">
+            <label class='form-label' for="email-box">E-mail: </label>
+            <input type="text" class='form-control' name="e-mail" id="email-box" maxlength="50" required>
+          </div>
 
-            <div class="input-content">
-                <label for="add-state"></label>
-                <select name="estado" id="add-state" required></select>
-            </div>
+          <div class="mb-3 col-md-3">
+            <label class='form-label' for="cpf">CPF: </label>
+            <input type="text" class='form-control' name="cpf-number" id="cpf" maxlength="11" required>
+          </div>
 
-            <div class="radio">
-                <input type="radio" name="compl" id="complemento1" checked value="casa" required>
-                <label for="complemento1"> Casa </label>
+          <div class="mb-3 col-md-9">
+            <label class='form-label' for="address">Endereço: </label>
+            <input type="text" class='form-control' name="endereco" id="address" maxlength="200" required>
+          </div>
+
+          <div class="input-content mb-3 col-md-3">
+            <label class='form-label' for="add-state">Estado:  </label>
+            <select class="form-select" name="estado" id="add-state" required></select>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label class='form-label' for="city">Cidade: </label>
+            <input type="text" class='form-control' name="cidade" id="city" maxlength="28" required>
+          </div>
+
+          <div class="form-check">
+            <input class= "form-check-input" type="radio" name="compl" id="complemento1" checked value="casa" required>
+            <label class="form-check-label" for="complemento1"> Casa </label>
+          </div>
+
+          <div class='form-check mb-4'>
+            <input class= "form-check-input" type="radio" name="compl" id="complemento2" value="apartamento" required>
+            <label class="form-check-label"  for="complemento2">Apartamento</label>
+          </div>
+        </fieldset>
             
-                <input type="radio" name="compl" id="complemento2" value="apartamento" required>
-                <label for="complemento2">Apartamento</label>
-            </div>
+        <fieldset class="container mt-4 border border-2">
+          <p class="mb-3 mt-3 lead" widith="100%"> <strong> Experiência profissional </strong></p>
+
+          <div class='mb-3'>
+            <label class='form-label'>Resumo do Currículo:</label>
+            <textarea class='form-control' name="last-xp" id="last-xp" rows='7' maxlength="1000"></textarea>
+          </div>
+
+          <div class="mb-3 col-md-9">
+            <label for="cargo">Cargo: </label>
+            <input type="text" class='form-control' name="cargo" id="cargo" maxlength="40" required>
+          </div>
+
+          <div class="mb-3 col-md-9">
+            <label for="description-word">Descrição do cargo: </label>
+            <input type="text" class='form-control' name="description-word" id="description-word" maxlength="500" required>
+          </div>
+
+          <div class="col-md-2">
+            <label for="initialDate">Data de inicio: </label>
+            <input class="form-control" type="text" class='form-control' name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" required>
+          </div>
+
+          <button type="submit" id="send-form" class='btn btn-outline-secondary btn-lg mt-3 mb-5'> Enviar Currículo</button>
+          <button type="reset" id="send-form" class='btn btn-outline-secondary btn-lg mt-3 mb-5'> Limpar </button>
+
         </fieldset>
-        
-        <fieldset>
-          <p>Última experiência profissional</p>
-
-            <div>
-                <p>Resumo do Currículo:</p>
-                <textarea name="" id="" cols="50" rows="10" maxlength="1000"></textarea>
-            </div>
-
-            <div>
-                <label for="cargo">Cargo: </label>
-                <input type="text" name="cargo" id="cargo" maxlength="40" required>
-            </div>
-
-            <div>
-                <label for="description-word">Descrição do cargo: </label>
-                <input type="text" name="description-word" id="description-word" maxlength="500" required>
-            </div>
-
-            <div>
-                <label for="initialDate">Dada de inicio: </label>
-                <input type="text" name="initial-date" id="initialDate" maxlength="10" required>
-            </div>
-            <button type="submit" id="send-form" class='btn btn-light'> Enviar Currículo</button>
-        </fieldset>
-
-    </form>
-    <script src="script.js" defer></script>
-</body>
+      </form>
+      <script src="script.js"></script>
+  </body>
 </html>
