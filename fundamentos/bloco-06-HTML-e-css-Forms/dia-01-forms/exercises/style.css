@@ -13,11 +13,6 @@ body{
 
 select {
   width: 40%;
-  font-size: ;
-}
-
-input[type="radio"] {
-  margin: 10px 5px 10px 20px;
 }
 
 .forms-conteiner {
@@ -34,4 +29,34 @@ input[type="radio"] {
 .input-content input {
   width: 100%;
   height: 3.6ch;
+}
+
+.radio input{
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+fieldset:nth-child(2) > div:nth-child(2){
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+fieldset legend{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#send-form {
+  margin: 30px auto 30px 20px;
+  padding: 10px 20px;
+}
+
+#text-abstract {
+  width: 100%;
+}
+
+textarea {
+  width: 93%;
+  margin-right: 20px;
 }

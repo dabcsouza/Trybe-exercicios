@@ -26,33 +26,56 @@
                 <input type="text" name="cpf-number" id="cpf" maxlength="11" required>
             </div>
 
-                <div class="input-content">
-                    <label for="">Endereço: </label>
-                    <input type="text" name="endereco" id="address" maxlength="200" required>
-                </div>
+            <div class="input-content">
+                <label for="">Endereço: </label>
+                <input type="text" name="endereco" id="address" maxlength="200" required>
+            </div>
 
-                <div class="input-content">
-                    <label for="">Cidade: </label>
-                    <input type="text" name="cidade" id="city" maxlength="28" required>
-                </div>
+            <div class="input-content">
+                <label for="">Cidade: </label>
+                <input type="text" name="cidade" id="city" maxlength="28" required>
+            </div>
 
-                <div class="input-content">
-                    <label for=""></label>
-                    <select name="estado" id="add-state" required></select>
-                </div>
+            <div class="input-content">
+                <label for=""></label>
+                <select name="estado" id="add-state" required></select>
+            </div>
 
+            <div class="radio">
                 <input type="radio" name="compl" id="complemento1" checked value="casa" required>
                 <label for="complemento1"> Casa </label>
             
                 <input type="radio" name="compl" id="complemento2" value="apartamento" required>
                 <label for="complemento2">Apartamento</label>
+            </div>
         </fieldset>
         
         <fieldset class="forms-conteiner">
+
             <legend>Última experiência profissional</legend>
-            <p>Resumo do Currículo:</p>
-            <textarea name="" id="" cols="50" rows="20" maxlength="1000"></textarea>
+
+            <div>
+                <p>Resumo do Currículo:</p>
+                <textarea name="" id="" cols="50" rows="10" maxlength="1000"></textarea>
+            </div>
+
+            <div class="input-content">
+                <label for="cargo">Cargo: </label>
+                <input type="text" name="cargo" id="cargo" maxlength="40" required>
+            </div>
+
+            <div class="input-content">
+                <label for="description-word">Descrição do cargo: </label>
+                <input type="text" name="description-word" id="description-word" maxlength="500" required>
+            </div>
+
+            <div class="input-content">
+                <label for="initialDate">Dada de inicio: </label>
+                <input type="text" name="initial-date" id="initialDate" maxlength="10" placeholder="dd/mm/aaaa" pattern="[0-9]+$" required>
+            </div>
+            <button type="submit" id="send-form"> Enviar Currículo</button>
         </fieldset>
+
     </form>
     <script src="script.js" defer></script>
 </body>
