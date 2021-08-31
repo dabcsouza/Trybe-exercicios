@@ -85,13 +85,6 @@ const obj3 = {
   title: 'My Different Title',
   description: 'My Description',
 };
-  
-// const compair = (obj1, obj2) => {
-//   if (assert.strictEqual(obj1,obj2) === undefined) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
 
-// assert.strictEqual(obj1, obj2);
+assert.deepStrictEqual(obj1,obj2);
+assert.throws(() => assert.strictEqual(obj1, obj3)); // como 1 = 2 e 1 != 3 portante 2 != 3
