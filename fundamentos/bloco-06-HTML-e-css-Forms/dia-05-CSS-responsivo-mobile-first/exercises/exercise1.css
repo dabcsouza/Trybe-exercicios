@@ -1,0 +1,36 @@
+body {
+font-size: 20px;
+margin: 10px;
+}
+h1 {
+    font-size: 1.6em;
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin: 15px 10px 10px 0;
+}
+
+figure {
+    
+}
+
+@media screen and (min-width:600px){
+    body {
+        background-color:lightblue;
+    }
+
+    .galery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    img {
+        width: 200px;
+
+    }
+
+}
