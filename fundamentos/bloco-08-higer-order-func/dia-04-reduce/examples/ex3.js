@@ -75,7 +75,7 @@ const estudantes = [
   },
 ];
 
-const expected =  [
+const expected =  [--
   { name: 'Jorge', 'Matéria': 'Português' },
   { name: 'Mario', 'Matéria': 'Biologia' },
   { name: 'Jorge', 'Matéria': 'Português' },
