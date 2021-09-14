@@ -8,6 +8,7 @@ setTimeout(() => pushNumber(numbers, 1), 3000);
 pushNumber(numbers, 2);
 pushNumber(numbers, 3);
 console.table(numbers);
-assert.deepStrictEqual(numbers, [1, 2, 3]);
+setTimeout(() => assert.deepStrictEqual(numbers, [2, 3, 1]),4000);
+
 
 
