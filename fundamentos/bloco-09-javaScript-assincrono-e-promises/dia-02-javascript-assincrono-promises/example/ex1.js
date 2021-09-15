@@ -6,3 +6,5 @@ const promise = new Promise((resolve, reject) => {
   }
   resolve(console.log(`Que sucesso =) nosso número foi ${number}`));
 });
+
+//sem o .then ou .catch
