@@ -1,4 +1,4 @@
-import fetch from 'cross-fetch'
+const fetch = require("node-fetch");
 function verifiedFetch(url) {
   return new Promise((resolve, reject) => {
     if (url === 'https://api.chucknorris.io/jokes/random?category=dev') {
