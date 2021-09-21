@@ -1,6 +1,6 @@
 const uppercase = (str, callback) => {
   setTimeout(() => {
-    callback(str.toUpperCase());    
+    callback(str.toUpperCase());
   }, 500);
 };
 

@@ -10,3 +10,4 @@ test('Verifica erro em função assincrona com callback', (done) => {
     }
   });
 })
+
