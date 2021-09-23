@@ -1,10 +1,13 @@
 {
-  "name": "dia-02-jest-async",
+  "name": "dia-03-testes-automatizados-jest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
