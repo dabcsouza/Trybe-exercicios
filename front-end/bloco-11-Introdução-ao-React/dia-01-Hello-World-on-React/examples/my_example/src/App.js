@@ -1,7 +1,11 @@
+import React from 'react';
 import './App.css';
+import MyComponent from './Component';
 
 function App() {
-  return();
+  return(
+    <MyComponent />
+  );
 }
 
 export default App;
