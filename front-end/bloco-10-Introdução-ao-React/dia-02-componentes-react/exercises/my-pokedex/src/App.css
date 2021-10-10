@@ -50,3 +50,22 @@ code {
     transform: rotate(360deg);
   }
 }
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid darkgrey;
+  width:200px;
+  border-radius: 5px;
+  margin: 3px;
+  box-shadow: 5px 5px 18px -3px #4CB08B;
+}

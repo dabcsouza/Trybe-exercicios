@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import {Component} from 'react'
+import FirstSelect from './FirstSelect';
 
 class App extends Component {
   constructor() {
@@ -33,20 +34,10 @@ class App extends Component {
       <form className="m-lg-3" onSubmit={this.handleSubmit}>
         <fieldset className="fd">
         <div className="form-row"> 
-          <div className="form-group col-md-2 mb-4">
-            <label htmlFor="select-1"> <h5 className="fw-bolder">Use select 1</h5></label>
-            <select 
-              className="form-control" 
-              id="select-1" 
-              name="select1"
-              onClickCapture={this.handleChange}>
-              <option>opt-1</option>
-              <option>opt-2</option>
-              <option>opt-3</option>
-              <option>opt-4</option>
-              <option>opt-5</option>
-            </select>
-          </div>
+          <FirstSelect 
+            handleChange={this.handleChange} 
+            value={this.state.select1} 
+          />
           <div className="form-group col-md-2 mb-4"> 
             <label htmlFor="select-2"> <h5 className="fw-bolder">Use select 2</h5></label>
             <select 
@@ -102,7 +93,6 @@ class App extends Component {
       </form>
     ) 
   }
-}
-;
+};
 
 export default App;
