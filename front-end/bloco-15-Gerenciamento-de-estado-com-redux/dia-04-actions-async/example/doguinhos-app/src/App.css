@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(236, 232, 232)
+}
+
+.dog-image {
+  width: 400px;
+  border: 3px double black;
+  margin: 30px auto;
+}
+
+.container {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+}
