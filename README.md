@@ -94,11 +94,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 10-3: _Jest - Simulando comportamentos_
 - [x] 10-4: _[Projeto - Jest Assíncrono e Mocking]()_
 
-## Desenvolvimento Front-end :white_check_mark:
+## Desenvolvimento Front-end :heavy_check_mark:
 
 ##### Bloco 11: Introdução - React
 
-- [x] 11-1: _'Hello, world!' no React!_:hourglass_flowing_sand:
+- [x] 11-1: _'Hello, world!' no React!_
 - [x] 11-2: _Componentes React_
 - [x] 11-3: _[Projeto - Movie Cards Library]()_
 
@@ -148,11 +148,11 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto - App de Receitas]()_
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :white_check_mark:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais
+##### Bloco 20: Introdução - Bancos de dados relacionais :hourglass_flowing_sand:
 
 - [ ] 20-1: _Banco de dados SQL_
 - [ ] 20-2: _Encontrando dados em um banco de dados_
