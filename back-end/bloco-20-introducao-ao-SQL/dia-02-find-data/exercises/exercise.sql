@@ -1,0 +1,16 @@
+SELECT 'This is SQL Exercise, Practice and Solution' AS title;
+SELECT 1 AS 'first number', 2 AS 'secound number', 3 AS 'thrid number';
+SELECT 10 + 15 AS sum;
+SELECT ( 4 / 3) * PI() * (2) ^ 3 AS 'sphere volume';
+USE Scientists;
+SELECT * FROM Scientists;
+SELECT Name AS 'Nome do Projeto', Hours AS 'Tempo de Trabalho' FROM Projects;
+SELECT * FROM Scientists ORDER BY Name;
+SELECT * FROM Projects ORDER BY Name DESC;
+SELECT CONCAT('O projeto ', Name, 'precisou de ', Hours, ' para ser concluído') from Projects;
+SELECT Name FROM Projects ORDER BY Hours ASC LIMIT 3;
+SELECT DISTINCT Scientist  FROM AssignedTo;
+SELECT Name FROM Projects ORDER BY Hours ASC LIMIT 1;
+SELECT Name FROM Projects ORDER BY Hours DESC LIMIT 1;
+SELECT * FROM Projects ORDER BY Hours DESC LIMIT 5;
+SELECT CONCAT('Existem ', COUNT(Name), ' cientistas na tabela Scientists.') FROM Scientists;
