@@ -152,17 +152,17 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end :white_check_mark:
 
-##### Bloco 20: Introdução - Bancos de dados relacionais :hourglass_flowing_sand:
+##### Bloco 20: Introdução - Bancos de dados relacionais
 
 - [x] 20-1: _Banco de dados SQL_
 - [x] 20-2: _Encontrando dados em um banco de dados_
 - [x] 20-3: _Filtrando dados de forma específica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One]()_
 
-##### Bloco 21: Bancos de dados relacionais
+##### Bloco 21: Bancos de dados relacionais :hourglass_flowing_sand:
 
-- [ ] 21-1: _Funções mais usadas no SQL_
+- [x] 21-1: _Funções mais usadas no SQL_
 - [ ] 21-2: _Descomplicando JOINs e UNIONs_
 - [ ] 21-3: _Stored Routines & Subqueries_
 - [ ] 21-4: _[Projeto - Vocabulary Booster]()_
