@@ -82,6 +82,3 @@ Car1.detail('O passageiro irá descer.');
 Car1.openTheDoor();
 Car1.closeTheDoor();
 Car1.detail('to be continued.');
-
-
-
