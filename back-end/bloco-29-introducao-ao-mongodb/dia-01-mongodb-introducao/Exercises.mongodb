@@ -1,0 +1,39 @@
+// Ex. 1
+db.bios.find({_id: 8});
+
+// Ex. 2
+db.bios.find({_id: 8}, {name: 1});
+
+// Ex. 3
+db.bios.find({_id: 8}, {name: 1, birth: 1});
+
+// Ex. 4
+db.bios.find({ "name.first": "John" }).pretty();
+
+// Ex. 5
+db.bios.find().limit(3).pretty();
+
+// Ex. 6
+db.bios.find().limit(2).skip(5).pretty();
+
+// Ex. 7
+db.books.countDocuments(); //431
+
+//aux
+db.books.find().limit(1);
+
+//Ex. 8
+db.books.find({ status: {$eq: "PUBLISH"} }).count();
+
+//Ex. 9
+db.books.find({}, {title: 1, isbn: 1, pageCount: 1, _id: 0}).limit(3);
+
+//Ex. 9
+db.books.find({}, {title: 1, isbn: 1, pageCount: 1, _id: 0}).limit(3);
+
+//Ex. 10
+
+db.books.find({ status: {$eq: "MEAP"} }, {title: 1, authors: 1, status: 1}).skip(5).limit(10);
+
+
+
