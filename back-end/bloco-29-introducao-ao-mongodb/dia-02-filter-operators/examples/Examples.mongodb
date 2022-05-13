@@ -1,0 +1,18 @@
+// Example 1
+
+const filterIn = ['Queens', 'Staten',
+      'Island', 'Bronx'];
+
+db.restaurants.find({ borough: 
+  { 
+    $in: filterIn
+  } 
+});
+
+// Example 2
+
+db.restaurants.countDocuments({ cuisine: { $ne: 'American'}});
+
+//Example 3
+
+db.restaurants.countDocuments({ rating: { $gte: 8 } });
