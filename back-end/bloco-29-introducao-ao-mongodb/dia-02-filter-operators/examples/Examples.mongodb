@@ -1,5 +1,7 @@
-// Example 1
+/* Part I*/
 
+
+// Example 1
 const filterIn = ['Queens', 'Staten',
       'Island', 'Bronx'];
 
@@ -10,9 +12,95 @@ db.restaurants.find({ borough:
 });
 
 // Example 2
-
 db.restaurants.countDocuments({ cuisine: { $ne: 'American'}});
 
 //Example 3
-
 db.restaurants.countDocuments({ rating: { $gte: 8 } });
+
+//Example 4
+db.restaurants.countDocuments({ rating: { $lt: 4 } });
+
+// Example 5
+const arrRating = [5, 6, 7];
+
+db.restaurants
+  .countDocuments({ rating: { $nin: arrRating } });
+
+
+/* Part II */
+
+//Example 1
+db.restaurants.countDocuments({ rating: {
+  $not: { $lte: 5 } 
+} });
+
+//Example 2
+db.restaurants.countDocuments({
+  $or: [
+    { rating: { $gte: 6}},
+    { borough: 'Brooklyn'}
+  ]
+});
+
+//Example 3
+const locations = ['Queens', 'Staten',
+  'Island', 'Brooklyn'];
+db.restaurants.countDocuments({
+  $or: [
+    { rating: { $gt: 4}},
+    { borough: { $in: locations}}
+  ]
+});
+
+//Example 4
+db.restaurants.countDocuments({
+  $nor: [{ rating: 1 }, { cuisine: 'American' }]
+});
+
+//Example 5
+db.restaurants.countDocuments({
+  $and: [
+    {
+      $or: [
+        { rating: { $gt: 6 } },
+        { rating: { $lt: 10 } }
+      ]
+    },
+    {
+      $or: [
+        { borough: 'Brooklyn' },
+        { cuisine: { $ne: 'Delicatessen' } }
+      ]
+    }
+  ]
+});
+
+
+//Part III
+db.example.insertMany([
+    { "name": "Mandioquinha Frita", "price": 14 },
+    { "name": "Litrão", "price": 8 },
+    { "name": "Torresmo", "price": 16 }
+])
+
+db.example.find().sort({ price: -1 });
+
+db.restaurants.find({}, { name: 1, _id: 0})
+  .sort({ name: 1 });
+
+  db.restaurants.find({}, { name: 1, _id: 0, rating: 1})
+  .sort({ rating: -1 });
+
+//part IV
+
+
+//Example I
+db.restaurants.deleteOne({
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices'
+});
+
+//Example II
+db.restaurants.deleteMany({
+  cuisine: 'American'
+});
+
